@@ -1,0 +1,145 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context="com.ifkbhit.wallet.wallet.fragments.InfoFragment"
+
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_balance"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycler_card_view_height"
+
+            android:layout_marginTop="8dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!--        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/double_pie_view_h"
+            android:layout_marginBottom="204dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_target"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/double_pie_h"
+                android:layout_marginBottom="56dp"
+                android:layout_weight="1" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_today"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/double_pie_h"
+                android:layout_marginBottom="56dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+-->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Statistic"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_balance" />
+
+
+        <!--
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_target"
+            android:layout_width="344dp"
+            android:layout_height="@dimen/pie_info_size_h"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/pie_global"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.07" />
+-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statistic_info_banner_h"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_target"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/double_pie_h"
+                android:layout_marginBottom="56dp"
+                android:layout_weight="1" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_today"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/double_pie_h"
+                android:layout_marginBottom="56dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Groups"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_global"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pie_info_size_h"
+
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

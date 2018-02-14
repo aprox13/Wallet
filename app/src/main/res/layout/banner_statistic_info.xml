@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/statistic_info_banner_h"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="@dimen/stat_info_banner_text_size"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/target"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="@dimen/stat_info_banner_text_size"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/spent"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="@dimen/stat_info_banner_text_size"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/available"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="@dimen/stat_info_banner_text_size"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/spend_today"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="@dimen/stat_info_banner_text_size"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/recommended_per_day"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_banner_target"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/stat_info_banner_text_size"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/target"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:id="@+id/tv_banner_spent"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/stat_info_banner_text_size"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/target"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:id="@+id/tv_banner_available"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/stat_info_banner_text_size"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/target"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:id="@+id/tv_banner_spent_today"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/stat_info_banner_text_size"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/target"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:id="@+id/tv_banner_rec"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/stat_info_banner_text_size"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/target"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+</LinearLayout>

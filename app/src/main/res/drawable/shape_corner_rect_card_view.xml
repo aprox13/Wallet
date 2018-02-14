@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/border_balance_item_size"
+                android:color="#808080"/>
+            <corners android:radius="@dimen/balance_item_border_radius" />
+            <solid android:color="@color/cardview_shadow_end_color" />
+        </shape>
+    </item>
+</selector>
